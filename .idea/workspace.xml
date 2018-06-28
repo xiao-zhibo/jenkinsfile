@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc8355f7-6eab-474b-a402-cd1f98acdd3e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/spark/build.groovy" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/spark/checkout.groovy" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/spark/pre.groovy" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/spark/publish.groovy" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/spark/utils.groovy" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/template/template.groovy" />
+      <change beforePath="$PROJECT_DIR$/src/com/spark/checkout.groovy" afterPath="$PROJECT_DIR$/src/com/spark/checkout.groovy" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +14,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="checkout.groovy" pinned="false" current-in-tab="true">
+      <file leaf-file-name="checkout.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/spark/checkout.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utils.groovy" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/spark/utils.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -250,12 +255,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530175051118</updated>
-      <workItem from="1530175052640" duration="1640000" />
+      <workItem from="1530175052640" duration="1906000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1640000" />
+    <option name="totallyTimeSpent" value="1906000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -325,14 +330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/spark/utils.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/spark/pre.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -351,8 +348,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/spark/checkout.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/spark/utils.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
           <folding />
         </state>
       </provider>

@@ -1,5 +1,7 @@
 package com.spark
 
+import com.spark.utils
+
 def checkout(CHECKOUT_LIST) {
     node {
         stage("Checkout") {
