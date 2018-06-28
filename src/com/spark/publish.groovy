@@ -1,5 +1,7 @@
 package com.spark
 
+import com.spark.utils
+
 def publish(BUILD_PATH, APP_NAME, REGISTRY_PROJECT_NAME, DOCKER_VERSION) {
     node {
         stage("Publish") {

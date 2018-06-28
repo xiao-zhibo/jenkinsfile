@@ -1,5 +1,7 @@
 package com.spark
 
+import com.spark.utils
+
 def build(params, BUILD_PATH, PROJECT, APP_NAME) {
     node {
         stage("Build") {
