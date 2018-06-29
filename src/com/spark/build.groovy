@@ -1,3 +1,4 @@
+#! /usr/bin/groovy
 package com.spark
 
 import com.spark.utils

@@ -1,3 +1,4 @@
+#! /usr/bin/groovy
 package com.spark
 
 def clean(params) {
