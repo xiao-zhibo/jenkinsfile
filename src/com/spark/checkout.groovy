@@ -12,7 +12,7 @@ def checkout(CHECKOUT_LIST) {
 
             script {
                 // Groovy map 迭代
-                CHECKOUT_LIST.each { k, v ->
+                CHECKOUT_LIST.each { k, v -> // k: 远程项目名称, v: 默认分支
                     def PROJECT_DIR = utils.projectDir("${GOPATH}", k)
                     sh "mkdir -p ${PROJECT_DIR}"
 
@@ -21,12 +21,12 @@ def checkout(CHECKOUT_LIST) {
                         branch = params.Branch
                     }
 
-                    echo "project: ${project}, branch: ${branch}"
+                    echo "project: ${k}, branch: ${branch}"
 
                     dir("${PROJECT_DIR}") {
                         git branch: branch,
                                 credentialsId: 'phtanus',
-                                url: utils.repo(project)
+                                url: utils.repo(k)
                     }
                 }
             }
