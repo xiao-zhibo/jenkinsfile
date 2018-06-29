@@ -11,15 +11,13 @@ def checkout(CHECKOUT_LIST) {
             sh "$GO get -u -v gopkg.in/mgo.v2"
 
             script {
-
-                for (i = 0; i  < CHECKOUT_LIST.size(); i++) {
-                    def  project = CHECKOUT_LIST[i]
-                    def PROJECT_DIR = utils.projectDir("${GOPATH}", project)
-
+                // Groovy map 迭代
+                CHECKOUT_LIST.each { k, v ->
+                    def PROJECT_DIR = utils.projectDir("${GOPATH}", k)
                     sh "mkdir -p ${PROJECT_DIR}"
 
-                    def branch = utils.branch(project)
-                    if (branch == "") {
+                    def branch = v
+                    if (v == "") {
                         branch = params.Branch
                     }
 
