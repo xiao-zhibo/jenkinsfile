@@ -15,7 +15,7 @@ def publish(BUILD_PATH, APP_NAME, REGISTRY_PROJECT_NAME, DOCKER_VERSION) {
 
                 sh "mkdir -p ${workPath}${GOROOT} && cp -rf ${goLibPath} ${workPath}${GOROOT}"
                 sh "cp -rf ${appFile} ${workPath}"
-                sh "mkdir -p ${workPath}/spark.conf.d/ && cp -rf ${SPARK_PATH} ${workPath}/spark.conf.d/"
+                sh "cp -rf ${SPARK_PATH} ${workPath}"
                 try {
                     sh "echo \"FROM centurylink/ca-certs\n\nMAINTAINER phtanus <sysu511@gmail.com>\n\nENV spark_path=/spark.conf.d\n\nCOPY ${APP_NAME} /\nADD spark.conf.d/ /spark.conf.d/\nADD ${goLibPath} ${goLibPath}\n\" > Dockerfile"
                 } catch(e) {
