@@ -1,7 +1,12 @@
 #! /usr/bin/groovy
 package com.spark
 
+import com.spark.library
+
 def pre(params, PROJECT, SPARK_BRANCH, SPARK_REPO) {
+    def l = new library()
+    l.test = "Hello world"
+    l.print()
     node {
         stage("Pre") {
             echo "BUILD: ${BUILD}"
